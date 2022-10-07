@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    padding-top: 28px;
+    height: 640px;
+    background-image: url("../img/banner-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+}
+
+.header::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.header__wrapper {
+    margin: auto;
+    padding: 0 45px;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.header__logo {
+    margin-top: 75px;
+}
+
+.header__intro--title {
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 26px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 45px 45px;
+    text-align: center;
+    color: white;
+}
+
+.trends__section {
+    width: 100%;
+}
+
+.main__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 16pt;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.main__title::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 66px;
+    height: 3px;
+    background: #b59f5b;
+}
+
+.trends__wrapper {
+    width: 100%;
+}
+
+.trend__card {
+    margin-top: 5px;
+    width: 100%;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000000;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.trend__card::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.trend__card:nth-child(1) {
+    margin-left: 0;
+    background-image: url("../img/trend1.jpg");
+}
+
+.trend__card:nth-child(2) {
+    background-image: url("../img/trend2.jpg");
+}
+
+.trend__card:nth-child(3) {
+    background-image: url("../img/trend3.jpg");
+}
+
+.trend__card:nth-child(4) {
+    background-image: url("../img/trend4.jpg");
+}
+
+.trend__card--info {
+    width: 100%;
+    outline: 4px solid rgba(179, 158, 82, 0.6);
+    padding:15px 15px;
+    margin: 15px;
+}
+
+.trend__tags {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.trend__tags > li > a {
+    margin-right: 20px;
+    color: #b59f5b;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 14pt;
+
+}
+
+.trend__card---title > h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", sans-serif;
+}
+
+.main__content--article:nth-child(1n + 2) {
+    margin-top: 35px;
+}
+
+.main__content {
+    margin: 45px auto;
+    padding: 0 15px;
+}
+
+.main__content--wrapper {
+    margin: auto;
+}
+
+.main__content--article {
+    width: 100%;
+    border-bottom: 3px solid #eeeeee;
+}
+
+.main__content--img {
+    width: 100%;
+}
+
+.main__content--articleTags {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    display: flex;
+}
+
+.main__content--articleTags > li > a {
+    margin-right: 20px;
+    color: #b59f5b;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 14pt;
+}
+
+.main__content--title {
+    margin-top: 15px;
+}
+
+.main__content--title > a {
+    color: black;
+    font-size: 14pt;
+    line-height: 20pt;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", sans-serif;
+}
+
+.main__content--info {
+    margin-top: 15px;
+    display: flex;
+}
+
+.main__content--info > time {
+    margin-right: 15px;
+}
+
+.main__content--date {
+    color: #888888;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 14px;
+}
+
+.main__content--author {
+    color: black;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 14px;
+}
+
+.main__content--text {
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.main__content--text > p {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.main__content--text > p:not(:first-child) {
+    margin-top: 15px;
+}
