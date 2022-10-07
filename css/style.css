@@ -25,6 +25,7 @@ a {
 /* header */
 
 .header {
+    display: flex;
     padding-top: 28px;
     height: 449px;
     background-image: url("../img/banner-bg.jpg");
@@ -100,7 +101,6 @@ a {
 
 /*  main */
 .main__title {
-    height: 42px;
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
