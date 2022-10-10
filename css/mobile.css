@@ -22,7 +22,6 @@ a {
     font-style: normal;
 }
 
-@media (orientation: portrait) , (orientation: landscape) {
 
 .header {
     width: 100%;
@@ -631,9 +630,17 @@ a {
     }
 }
 
-input {display: none;}
-label {cursor: pointer;}
+.nav__back {
+    display: none;
+}
 
+.nav__check {
+    display: none;
+}
+
+.nav__showmenu {
+    display: none;
+}
 .header__nav {user-select: none;}
 
 .nav__showmenu {
@@ -703,5 +710,5 @@ label {cursor: pointer;}
 .nav__check:checked+.nav__showmenu {color:#fff;}
 .menu__check:checked~.menu__submenu {max-height: 100vh;}
 .menu__check:checked+.menu__showsub {transform: rotate(180deg);}
-.nav__check:checked~.header__nav--list {transform: translateX(0);}}
+.nav__check:checked~.header__nav--list {transform: translateX(0);}
 
