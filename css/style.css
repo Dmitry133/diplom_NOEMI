@@ -22,10 +22,17 @@ a {
     font-style: normal;
 }
 
-input {display: none;}
-label {cursor: pointer;}
+.nav__back {
+    display: none;
+}
 
-.header__nav {user-select: none;}
+.nav__check {
+    display: none;
+}
+
+.nav__showmenu {
+    display: none;
+}
 
 /* header */
 
@@ -715,4 +722,5 @@ label {cursor: pointer;}
     color: #999999;
     text-align: center;
 }
+
 

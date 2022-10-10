@@ -22,6 +22,8 @@ a {
     font-style: normal;
 }
 
+@media (orientation: portrait) , (orientation: landscape) {
+
 .header {
     width: 100%;
     padding-top: 28px;
@@ -701,5 +703,5 @@ label {cursor: pointer;}
 .nav__check:checked+.nav__showmenu {color:#fff;}
 .menu__check:checked~.menu__submenu {max-height: 100vh;}
 .menu__check:checked+.menu__showsub {transform: rotate(180deg);}
-.nav__check:checked~.header__nav--list {transform: translateX(0);}
+.nav__check:checked~.header__nav--list {transform: translateX(0);}}
 
