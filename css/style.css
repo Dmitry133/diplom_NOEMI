@@ -25,7 +25,6 @@ a {
 /* header */
 
 .header {
-    display: flex;
     padding-top: 28px;
     height: 449px;
     background-image: url("../img/banner-bg.jpg");
@@ -386,9 +385,6 @@ a {
 
 .aside__article {
     display: flex;
-}
-
-.aside__article {
     margin-top: 23px;
 }
 
