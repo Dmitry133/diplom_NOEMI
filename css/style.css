@@ -22,6 +22,11 @@ a {
     font-style: normal;
 }
 
+input {display: none;}
+label {cursor: pointer;}
+
+.header__nav {user-select: none;}
+
 /* header */
 
 .header {
