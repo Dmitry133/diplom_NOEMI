@@ -459,5 +459,53 @@
         </div>
     </div>
 </footer>
+<div class="popup" id="popup">
+    <div class="close__form" id="close__form"></div>
+    <h2 class="main__title">Ваш фидбек</h2>
+    <div class="popup__message">
+        <p class="popup__message--text">Как часто вы заходите на сайт?</p>
+        <form action="" method="post">
+            <select name="" id="" class="popup__select">
+                <option></option>
+                <option>Раз</option>
+                <option>Два</option>
+                <option>Три</option>
+            </select>
+            <p class="popup__message--text">Вы подписаны на e-mail рассылку?</p>
+            <label class="checkbox-group">
+                <input type="radio" class="checkbox" name="radio">
+                <span class="checkbox-text">Да</span>
+            </label>
+            <label class="checkbox-group">
+                <input type="radio" class="checkbox" name="radio">
+                <span class="checkbox-text">Нет</span>
+            </label>
+            <p class="popup__message--text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+            <textarea placeholder="Может, больше рецептов?" class="popup__message--textarea" name="text" id="text" cols="30" rows="10"></textarea>
+            <button class="popup__message--button" type="submit" id="form__btn">отправить</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", docReady);
+    function docReady()
+    {
+        sessionStorage.setItem('is_reloaded', 'no');
+        if(sessionStorage.getItem('is_reloaded') == 'no')
+        {
+            sessionStorage.setItem('is_reloaded', 'yes');
+            setTimeout(showPop, 2000);
+        }
+    }
+    function showPop()
+    {
+        document.getElementsByClassName('popup')[0].style.display = 'block';
+        sessionStorage.setItem('is_reloaded', 'no');
+    }
+
+    document.getElementById('close__form').onclick = function() {
+        document.getElementById('popup').style.display = "none";
+    }
+</script>
