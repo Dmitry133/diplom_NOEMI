@@ -78,7 +78,7 @@ a {
 }
 
 .header__nav--list {
-    font-size: 13pt;
+    font-size: 13px;
     display: flex;
     list-style-type: none;
     text-decoration: none;
@@ -115,7 +115,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 20pt;
+    font-size: 20px;
 }
 
 .main__title::after {
@@ -125,7 +125,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    width: 66px;
+    width: 90px;
     height: 3px;
     background: #b59f5b;
 }
@@ -154,7 +154,7 @@ a {
     color: #b59f5b;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14pt;
+    font-size: 14px;
 
 }
 
@@ -218,6 +218,7 @@ a {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
+    font-size: 21px;
 }
 
 .trend__card---title > h3:hover {
@@ -267,7 +268,7 @@ a {
     color: #b59f5b;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14pt;
+    font-size: 14px;
 
 }
 
@@ -284,8 +285,7 @@ a {
 
 .main__content--title > a {
     color: black;
-    font-size: 14pt;
-    line-height: 20pt;
+    font-size: 20px;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
 }
@@ -342,7 +342,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .aside__content--title::after {
@@ -362,7 +362,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .aside__content--mailingList::after {
@@ -372,7 +372,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    width: 66px;
+    width: 90px;
     height: 3px;
     background: #b59f5b;
 }
@@ -406,7 +406,7 @@ a {
 
 .aside__article--date {
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #a9a9a9;
 }
 
@@ -511,7 +511,7 @@ a {
     list-style-type: none;
     border: 3px solid #eeeeee;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 10pt;
+    font-size: 12px;
 }
 
 .aside__tags--list > li > a {
@@ -532,7 +532,7 @@ a {
     padding: 13px 0 13px 3px;
     list-style-type: none;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 10pt;
+    font-size: 14px;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -564,6 +564,7 @@ a {
     justify-content: space-between;
     margin-top: 45px;
     padding: 0 15px;
+
 }
 
 .shop__card {
@@ -580,7 +581,7 @@ a {
     outline-offset: 20px;
     margin-top: -15px;
     padding-top: 25px;
-    height: 280px;
+    min-height: 235px;
 }
 
 .shop__title {
@@ -596,7 +597,7 @@ a {
 
 .shop__info > p {
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 15pt;
+    font-size: 15px;
 }
 
 .shop__info > p:hover {
@@ -622,16 +623,18 @@ a {
 }
 
 .old__price {
+    font-family: "OpenSans-Bold", sans-serif;
     text-transform: uppercase;
     text-decoration: line-through;
-    font-size: 14pt;
+    font-size: 14px;
     font-weight: bold;
     line-height: 24px;
 }
 
 .new__price {
+    font-family: "OpenSans-Bold", sans-serif;
     text-transform: uppercase;
-    font-size: 20pt;
+    font-size: 20px;
     font-weight: bold;
     line-height: 24px;
 }
@@ -725,25 +728,47 @@ a {
 
 .popup {
     display: none;
-    position: absolute;
-    top: 20%;
-    left: 39%;
-    background-color: #ffffff;
-    z-index: 10;
-    padding: 0px 30px;
-    width: 350px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.6);
 }
 
-.popup__message {
+.popup::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
+    content: "";
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.popup__wrapper {
+    position: fixed;
+    top: 24%;
+    left: 40%;
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
+    z-index: 10;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 55px;
+    width: 390px;
+}
+
+
+.popup__form {
+    margin-top: 35px;
 }
 
 .popup__message--text  {
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 16px;
-    margin:25px 0;
+    font-size: 13px;
+    margin:15px 0;
 }
 
 .popup__select {
@@ -769,9 +794,9 @@ a {
 }
 
 .popup__message--textarea {
-    padding: 10px;
+    padding: 23px;
     font-family:"OpenSans-Regular",sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
     border: none;
     background-color: #f9f9f9;
@@ -789,7 +814,7 @@ a {
     display: block;
     width: 100%;
     height: 50px;
-    margin:20px auto;
+    margin:30px auto 0;
 }
 
 .checkbox-text::before {
@@ -807,7 +832,7 @@ a {
 .checkbox-text {
     display: inline-block;
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .checkbox-text::before {
@@ -835,10 +860,10 @@ a {
 .close__form {
     background-image: url("../svg/form-x.svg");
     position: relative;
-    left: 305px;
-    bottom: 17px;
-    width: 15px;
-    height: 15px;
+    left: 340px;
+    bottom: 25px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 

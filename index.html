@@ -36,7 +36,7 @@
 <section class="trends__section">
     <h2 class="main__title">Сейчас в тренде</h2>
     <div class="trends__wrapper">
-        <div class="trend__card">
+        <article class="trend__card">
             <div class="trend__card--info">
                 <ul class="trend__tags">
                     <li><a href="#">Lifestyle</a></li>
@@ -48,7 +48,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="trend__card">
             <div class="trend__card--info">
                 <ul class="trend__tags">
@@ -101,9 +101,9 @@
                         <li><a href="#">travel</a></li>
                         <li><a href="#">health</a></li>
                     </ul>
-                    <h3 class="main__content--title">
+                    <h2 class="main__content--title">
                         <a href="#">10 мест, ради которых стоит проснуться на рассвете</a>
-                    </h3>
+                    </h2>
                     <div class="main__content--info">
                         <time class="main__content--date">10 июня 2019</time>
                         <a href="#" class="main__content--author">Неизвестный автор</a>
@@ -123,9 +123,9 @@
                         <li><a href="#">health</a></li>
                         <li><a href="#">lifestyle</a></li>
                     </ul>
-                    <h3 class="main__content--title">
+                    <h2 class="main__content--title">
                         <a href="#">йога для начинающих в домашних условиях</a>
-                    </h3>
+                    </h2>
                     <div class="main__content--info">
                         <time class="main__content--date">10 июня 2019</time>
                         <a href="#" class="main__content--author">Неизвестный автор</a>
@@ -144,9 +144,9 @@
                     <ul class="main__content--articleTags">
                         <li><a href="#">music</a></li>
                     </ul>
-                    <h3 class="main__content--title">
+                    <h2 class="main__content--title">
                         <a href="#">лучшие музыкальные фестивали этого лета</a>
-                    </h3>
+                    </h2>
                     <div class="main__content--info">
                         <time class="main__content--date">10 июня 2019</time>
                         <a href="#" class="main__content--author">Неизвестный автор</a>
@@ -167,9 +167,9 @@
                         <li><a href="#">lifestyle</a></li>
                         <li><a href="#">food</a></li>
                     </ul>
-                    <h3 class="main__content--title">
+                    <h2 class="main__content--title">
                         <a href="#">Наукоёмкий подход к кулинарии</a>
-                    </h3>
+                    </h2>
                     <div class="main__content--info">
                         <time class="main__content--date">10 июня 2019</time>
                         <a href="#" class="main__content--author">Неизвестный автор</a>
@@ -190,9 +190,9 @@
                         <li><a href="#">interior</a></li>
                         <li><a href="#">art</a></li>
                     </ul>
-                    <h3 class="main__content--title">
+                    <h2 class="main__content--title">
                         <a href="#">делаем модные принты на подушках для интерьера</a>
-                    </h3>
+                    </h2>
                     <div class="main__content--info">
                         <time class="main__content--date">10 июня 2019</time>
                         <a href="#" class="main__content--author">Неизвестный автор</a>
@@ -362,7 +362,7 @@
 </div>
 <section class="shop__section">
     <h2 class="main__title">наши изделия</h2>
-    <div class="shop__wrapper">
+    <article class="shop__wrapper">
         <div class="shop__card">
             <div class="shop__card--photo">
                 <picture>
@@ -370,7 +370,7 @@
                             srcset="img/shop-item-mobile1.jpg">
                     <source media="(min-width: 641px) and (max-width: 1201px)"
                             srcset="img/shop-item-tablet1.jpg">
-                    <img src="img/shop-item-desk1.jpg" alt="product photo">
+                    <img class="shop__card--photo--img" src="img/shop-item-desk1.jpg" alt="product photo">
                 </picture>
             </div>
             <div class="shop__content">
@@ -396,7 +396,7 @@
                             srcset="img/shop-item-mobile2.jpg">
                     <source media="(min-width: 641px) and (max-width: 1201px)"
                             srcset="img/shop-item-tablet2.jpg">
-                    <img src="img/shop-item-desk2.jpg" alt="product photo">
+                    <img class="shop__card--photo--img" src="img/shop-item-desk2.jpg" alt="product photo">
                 </picture>
             </div>
             <div class="shop__content">
@@ -423,7 +423,7 @@
                             srcset="img/shop-item-mobile3.jpg">
                     <source media="(min-width: 641px) and (max-width: 1201px)"
                             srcset="img/shop-item-tablet3.jpg">
-                    <img src="img/shop-item-desk3.jpg" alt="product photo">
+                    <img class="shop__card--photo--img" src="img/shop-item-desk3.jpg" alt="product photo">
                 </picture>
             </div>
             <div class="shop__content">
@@ -443,7 +443,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </section>
 <footer class="footer">
     <div class="footer__wrapper">
@@ -460,52 +460,58 @@
     </div>
 </footer>
 <div class="popup" id="popup">
-    <div class="close__form" id="close__form"></div>
-    <h2 class="main__title">Ваш фидбек</h2>
-    <div class="popup__message">
-        <p class="popup__message--text">Как часто вы заходите на сайт?</p>
-        <form action="" method="post">
-            <select name="" id="" class="popup__select">
-                <option></option>
-                <option>Раз</option>
-                <option>Два</option>
-                <option>Три</option>
-            </select>
-            <p class="popup__message--text">Вы подписаны на e-mail рассылку?</p>
-            <label class="checkbox-group">
-                <input type="radio" class="checkbox" name="radio">
-                <span class="checkbox-text">Да</span>
-            </label>
-            <label class="checkbox-group">
-                <input type="radio" class="checkbox" name="radio">
-                <span class="checkbox-text">Нет</span>
-            </label>
-            <p class="popup__message--text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-            <textarea placeholder="Может, больше рецептов?" class="popup__message--textarea" name="text" id="text" cols="30" rows="10"></textarea>
-            <button class="popup__message--button" type="submit" id="form__btn">отправить</button>
-        </form>
+    <div class="popup__wrapper">
+        <div class="close__form" id="close__form"></div>
+        <h2 class="main__title">Ваш фидбек</h2>
+        <div class="popup__message">
+            <form action="" method="post" class="popup__form">
+                <label>
+                    <p class="popup__message--text">Как часто вы заходите на сайт?</p>
+                    <select name="" id="" class="popup__select">
+                        <option></option>
+                        <option>Раз</option>
+                        <option>Два</option>
+                        <option>Три</option>
+                    </select>
+                </label>
+                <p class="popup__message--text">Вы подписаны на e-mail рассылку?</p>
+                <label class="checkbox-group">
+                    <input type="radio" class="checkbox" name="radio">
+                    <span class="checkbox-text">Да</span>
+                </label>
+                <label class="checkbox-group">
+                    <input type="radio" class="checkbox" name="radio">
+                    <span class="checkbox-text">Нет</span>
+                </label>
+                <label>
+                    <p class="popup__message--text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                    <textarea placeholder="Может, больше рецептов?" class="popup__message--textarea" name="text"
+                              id="text"
+                              cols="30" rows="10"></textarea></label>
+                <button class="popup__message--button" type="submit" id="form__btn">отправить</button>
+            </form>
+        </div>
     </div>
 </div>
 </body>
 </html>
 <script>
     document.addEventListener("DOMContentLoaded", docReady);
-    function docReady()
-    {
+
+    function docReady() {
         sessionStorage.setItem('is_reloaded', 'no');
-        if(sessionStorage.getItem('is_reloaded') == 'no')
-        {
+        if (sessionStorage.getItem('is_reloaded') == 'no') {
             sessionStorage.setItem('is_reloaded', 'yes');
             setTimeout(showPop, 2000);
         }
     }
-    function showPop()
-    {
+
+    function showPop() {
         document.getElementsByClassName('popup')[0].style.display = 'block';
         sessionStorage.setItem('is_reloaded', 'no');
     }
 
-    document.getElementById('close__form').onclick = function() {
+    document.getElementById('close__form').onclick = function () {
         document.getElementById('popup').style.display = "none";
     }
 </script>

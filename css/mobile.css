@@ -59,7 +59,7 @@ a {
 }
 
 .header__logo {
-    margin-top: 75px;
+    margin-top: 85px;
 }
 
 .header__intro--title {
@@ -81,7 +81,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 16pt;
+    font-size: 16px;
     margin-top: 45px;
     margin-bottom: 40px;
 }
@@ -105,7 +105,7 @@ a {
 .trend__card {
     margin-top: 5px;
     width: 100%;
-    height: 230px;
+    min-height: 250px;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #000000;
@@ -164,7 +164,7 @@ a {
     color: #b59f5b;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14pt;
+    font-size: 14px;
 
 }
 
@@ -172,6 +172,7 @@ a {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
+    font-size: 16px;
 }
 
 .main__content--article:nth-child(1n + 2) {
@@ -197,8 +198,8 @@ a {
 }
 
 .main__content--articleTags {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     list-style-type: none;
     display: flex;
 }
@@ -208,7 +209,7 @@ a {
     color: #b59f5b;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .main__content--title {
@@ -217,8 +218,8 @@ a {
 
 .main__content--title > a {
     color: black;
-    font-size: 14pt;
-    line-height: 20pt;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
 }
@@ -235,13 +236,13 @@ a {
 .main__content--date {
     color: #888888;
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .main__content--author {
     color: black;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .main__content--text {
@@ -251,7 +252,7 @@ a {
 
 .main__content--text > p {
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.4;
 }
 
@@ -268,9 +269,9 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 16pt;
-    margin-top: 45px;
-    margin-bottom: 40px;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
 }
 
 .aside__content--title::after {
@@ -296,7 +297,7 @@ a {
 
 .aside__article--date {
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #a9a9a9;
 }
 
@@ -350,7 +351,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 16pt;
+    font-size: 16px;
     margin-top: 45px;
 }
 
@@ -470,6 +471,15 @@ a {
     justify-content: center;
 }
 
+.shop__card--photo {
+    width: 90%;
+}
+
+
+.shop__card--photo--img {
+    width: 100%;
+}
+
 .shop__content {
     width: 100%;
     outline: 4px solid rgba(179, 158, 82, 0.6);
@@ -480,7 +490,7 @@ a {
 
 .shop__title {
     font-family: "OpenSans-Bold", sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
     padding-bottom: 8px;
 }
@@ -491,12 +501,9 @@ a {
 
 .shop__info > p {
     font-family: "OpenSans-Regular", sans-serif;
-    font-size: 15pt;
+    font-size: 15px;
 }
 
-.shop__info > p:hover {
-    font-weight: bold;
-}
 
 .shop__info > p > a {
     text-decoration: none;
@@ -519,14 +526,14 @@ a {
 .old__price {
     text-transform: uppercase;
     text-decoration: line-through;
-    font-size: 14pt;
+    font-size: 14px;
     font-weight: bold;
     line-height: 24px;
 }
 
 .new__price {
     text-transform: uppercase;
-    font-size: 20pt;
+    font-size: 20px;
     font-weight: bold;
     line-height: 24px;
 }
@@ -711,4 +718,146 @@ a {
 .menu__check:checked~.menu__submenu {max-height: 100vh;}
 .menu__check:checked+.menu__showsub {transform: rotate(180deg);}
 .nav__check:checked~.header__nav--list {transform: translateX(0);}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.popup::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
+    content: "";
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.popup__wrapper {
+    width: 90%;
+    left: 5%;
+    top: 55px;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 10;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 55px;
+
+}
+
+
+.popup__form {
+    margin-top: 35px;
+}
+
+.popup__message--text  {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 13px;
+    margin:15px 0;
+}
+
+.popup__select {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 25px;
+    border: none;
+    background-color: #f9f9f9;
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 10px;
+    font-size: 14px;
+    font-family:"OpenSans-Regular",sans-serif;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.popup__message--textarea {
+    padding: 23px;
+    font-family:"OpenSans-Regular",sans-serif;
+    font-size: 13px;
+    width: 100%;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+.popup__message--button {
+    font-family: "OpenSans-Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    background-color: #b59f5b;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin:30px auto 0;
+}
+
+.checkbox-text::before {
+    content: "";
+    display:inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.checkbox-text {
+    display: inline-block;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 13px;
+}
+
+.checkbox-text::before {
+    margin-right: 8px;
+}
+
+.checkbox:checked ~ .checkbox-text::before {
+    background-image: url("../svg/form-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    outline-offset: 2px;
+}
+.checkbox-group:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.checkbox {
+    position: absolute;
+    clip:rect(1px);
+    height: 1px;
+    width: 1px;
+}
+
+.close__form {
+    background-image: url("../svg/form-x.svg");
+    position: relative;
+    left: 100.5%;
+    bottom: 35px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
 
