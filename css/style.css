@@ -506,12 +506,13 @@ a {
 }
 
 .aside__tags--list > li {
-    margin: 0 7px 7px 0;
+    margin: 0 4px 7px 0;
     padding: 8px 15px;
     list-style-type: none;
     border: 3px solid #eeeeee;
     font-family: "OpenSans-Bold", sans-serif;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .aside__tags--list > li > a {
